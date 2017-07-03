@@ -22,6 +22,6 @@ from (
 --       options: hash (but which algorithm? default? pgcrypto?)
 --                GIN - good for contains queries
 --                b-tree
--- create index on sections_to_section using hash (current);
-create index on sections_to_section using gin (current);
+create index on sections_to_section using hash (current);
+-- create index on sections_to_section using gin (current);
 -- create index on sections_to_section (current);
